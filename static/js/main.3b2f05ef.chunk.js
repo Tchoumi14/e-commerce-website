@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-redux-firebase-ecommerce"]=this["webpackJsonpreact-redux-firebase-ecommerce"]||[]).push([[0],{3:function(e,t,r){e.exports=r(8)},8:function(e,t,r){"use strict";r.r(t);var n=r(0),a=r.n(n),c=r(2);var l=function(){return a.a.createElement("div",{className:"App"},a.a.createElement("h2",null,"Hello world!"))};r.n(c).a.render(a.a.createElement(a.a.StrictMode,null,a.a.createElement(l,null)),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.3b2f05ef.chunk.js.map
