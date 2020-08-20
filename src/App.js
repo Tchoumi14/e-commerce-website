@@ -22,6 +22,8 @@ import './default.scss';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 import Admin from './pages/Admin';
+import AdminLayout from './layouts/AdminLayout';
+import DashboardLayout from './layouts/DashboardLayout';
 
 	const App = props => {
 const dispatch = useDispatch(); 	
@@ -60,16 +62,16 @@ const dispatch = useDispatch();
         )} />
         <Route path="/dashboard" render={() => (
           <WithAuth>
-            <MainLayout>
+           <DashboardLayout>
               <Dashboard />
-            </MainLayout>
+            </DashboardLayout>
           </WithAuth>
         )} />
          <Route path="/admin" render={() => (
           <WithAdminAuth>
-            <MainLayout>
+             <AdminLayout>
               <Admin />
-            </MainLayout>
+           </AdminLayout>
           </WithAdminAuth>
         )} />
       </Switch>

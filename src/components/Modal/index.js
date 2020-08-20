@@ -1,7 +1,17 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import React, { useState } from 'react';
+import './styles.scss';
 
+const Modal = ({ hideModal, toggleModal, children }) => {
+  if (hideModal) return null;
 
+  return (
+    <>
+    <div className="modalOverlay" onClick={() => toggleModal()} />
+      <div className="modal">
+        {children}
+      </div>
+    </>
+  );
+}
+
+export default Modal;
